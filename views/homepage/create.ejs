@@ -1,0 +1,22 @@
+<h1>Create email</h1>
+
+<br>
+<form action="/create" method="POST">
+    <div>
+        <label for="recieverEmail">To</label>
+        <input type="mail" id="recieverEmail" name="recieverEmail" required>
+    </div>
+    <div>
+        <label for="message">Type message here</label>
+        <input type="text" id="message" name="message" required>
+    </div>
+
+
+    <button onclick=alertFunction() type="submit">Send mail</button>
+</form>
+
+<script>
+    function alertFunction(){
+        alert('Mail sent')
+    }
+</script>

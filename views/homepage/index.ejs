@@ -1,0 +1,21 @@
+<h1> Velkommen <%= name %></h1>
+
+<a href="/create">Write New Message</a>
+<br>
+<a href="/login">Go back to the log-in page</a>
+<br>
+<br>
+<table>
+    <tr>  
+        <td> Recieved Date  </td>
+        <td> Message </td>
+    </tr>
+    <% messageData.forEach(row => {  %>  
+     <tr> 
+        <td> <%= row.Sent_date %> </td>
+        <td> <%= row.Message %> </td>
+    </tr> %>
+    <% }) %>
+</table>
+
+</form>
